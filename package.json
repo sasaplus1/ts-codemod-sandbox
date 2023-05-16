@@ -5,5 +5,8 @@
     "jscodeshift": "^0.15.0",
     "typescript": "^5.0.4"
   },
-  "private": true
+  "private": true,
+  "scripts": {
+    "transform": "jscodeshift --parser=tsx -t ./transform.ts ./index.ts"
+  }
 }
